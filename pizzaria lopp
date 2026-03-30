@@ -1,0 +1,40 @@
+'''import tkinter 
+root = tkinter.Tk()
+root.geometry("500x300")
+
+def clique():
+    print("Fazer login")
+texto= tkinter.Label(root, text="Fazer login")
+texto.grid(padx=10, pady=10)
+
+botao= tkinter.Button(root, text= "Login", command=clique)
+botao.grid(padx=10, pady=10)
+
+root.mainloop()'''
+
+import customtkinter
+customtkinter.set_appearance_mode("dark")
+customtkinter.set_default_color_theme("dark-blue")
+
+
+root = customtkinter.CTk()
+root.geometry("500x300")
+def clique():
+
+    print("Fazer login")
+texto = customtkinter.CTkLabel(root, text= "Fazer login")
+texto.pack(padx=10, pady=10)
+
+numero = customtkinter.CTkEntry(root, placeholder_text="Digite seu número aqui:")
+numero.pack(padx=10, pady=10)
+
+senha = customtkinter.CTkEntry(root, placeholder_text="Digite sua senha aqui:", show="*")
+senha.pack(padx=10, pady=10)
+
+checkbox = customtkinter.CTkCheckBox(root, text="Lembrar login")
+checkbox.pack(padx=10, pady=10)
+
+botao= customtkinter.CTkButton(root, text="Login", command=clique)
+botao.pack(padx=10,pady=10)
+
+root.mainloop()
