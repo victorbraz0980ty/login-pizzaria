@@ -1,5 +1,6 @@
 '''import tkinter 
 root = tkinter.Tk()
+root.title("Seja bem - vindo a pizza loop")
 root.geometry("500x300")
 
 def clique():
@@ -7,7 +8,7 @@ def clique():
 texto= tkinter.Label(root, text="Fazer login")
 texto.grid(padx=10, pady=10)
 
-botao= tkinter.Button(root, text= "Login", command=clique)
+botao= tkinter.Button(root, text= "Seja bem - vindo a pizza loop", command=clique)
 botao.grid(padx=10, pady=10)
 
 root.mainloop()'''
@@ -18,17 +19,18 @@ customtkinter.set_default_color_theme("dark-blue")
 
 
 root = customtkinter.CTk()
+root.title("login dos usuários")
 root.geometry("500x300")
 def clique():
 
-    print("Fazer login")
-texto = customtkinter.CTkLabel(root, text= "Fazer login")
+    print("Seja bem - vindo a pizza loop, faça o seu login")
+texto = customtkinter.CTkLabel(root, text= "Seja bem - vindo a pizza loop, faça o seu login:", font=("Arial",14,"bold"))
 texto.pack(padx=10, pady=10)
 
-numero = customtkinter.CTkEntry(root, placeholder_text="Digite seu número aqui:")
+numero = customtkinter.CTkEntry(root, placeholder_text="Digite seu nome:")
 numero.pack(padx=10, pady=10)
 
-senha = customtkinter.CTkEntry(root, placeholder_text="Digite sua senha aqui:", show="*")
+senha = customtkinter.CTkEntry(root, placeholder_text="Digite sua senha:", show="*")
 senha.pack(padx=10, pady=10)
 
 checkbox = customtkinter.CTkCheckBox(root, text="Lembrar login")
@@ -38,3 +40,4 @@ botao= customtkinter.CTkButton(root, text="Login", command=clique)
 botao.pack(padx=10,pady=10)
 
 root.mainloop()
+
